@@ -1,14 +1,12 @@
 USE AdventureWorks2014
 
-SELECT* FROM HumanResources.Employee
 --A first 20 employees who  joined early
 
 SELECT top 20 e.HireDate 
 FROM HumanResources.Employee e
 order by e.HireDate 
 
---B find all employees, jobtitle,card details 
---whose credit card expired in the month 9 and year 2009
+--B find all employees, jobtitle,card details  whose credit card expired in the month 9 and year 2009
 
 select p.BusinessEntityID,p.FirstName,e.JobTitle,c.ExpMonth,c.ExpMonth
 from HumanResources.Employee e,
